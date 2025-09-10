@@ -50,72 +50,85 @@
 // }
 
 
-  let form=document.getElementById("formm")
-  function student(event){
-    event.preventDefault()
-    let arre=JSON.parse(localStorage.getItem("name"))||[];
+  // let form=document.getElementById("formm")
+  // function student(event){
+  //   event.preventDefault()
+  //   let arre=JSON.parse(localStorage.getItem("name"))||[];
 
-    let name =document.getElementById("name").value;
-    let age=document.getElementById("age").value;
-    let course=document.getElementById("course").value;
-    let mark=document.getElementById("mark").value;
+  //   let name =document.getElementById("name").value;
+  //   let age=document.getElementById("age").value;
+  //   let course=document.getElementById("course").value;
+  //   let mark=document.getElementById("mark").value;
 
-     let studentobj={name:name,age:age,course:course,mark:mark};
-     arre.push(studentobj);
-     localStorage.setItem("name",JSON.stringify(arre));
+  //    let studentobj={name:name,age:age,course:course,mark:mark};
+  //    arre.push(studentobj);
+  //    localStorage.setItem("name",JSON.stringify(arre));
      
   
-  };
-  function Showdata(){
-    let arre=JSON.parse(localStorage.getItem("name"))||[];
-    let data=document.getElementById("studentdata")
-      HTML=""
-    arre.forEach((student,a) => {
-      let table= `
-                  <tr>
-                    <td>${student.name}</td>
-                    <td>${student.age}</td>
-                    <td>${student.course}</td>
-                    <td>${student.mark}</td>
-                    <td><button onclick="edit(${a})">edit</button><button onclick="deletedata(${a})" >delete</button></td>
+  // };
+  // function Showdata(){
+  //   let arre=JSON.parse(localStorage.getItem("name"))||[];
+  //   let data=document.getElementById("studentdata")
+  //     HTML=""
+  //   arre.forEach((student,a) => {
+  //     let table= `
+  //                 <tr>
+  //                   <td>${student.name}</td>
+  //                   <td>${student.age}</td>
+  //                   <td>${student.course}</td>
+  //                   <td>${student.mark}</td>
+  //                   <td><button onclick="edit(${a})">edit</button><button onclick="deletedata(${a})" >delete</button></td>
                     
-                   </tr>`
+  //                  </tr>`
       
-      HTML +=table;
+  //     HTML +=table;
       
-    });
-    data.innerHTML=HTML;
+  //   });
+  //   data.innerHTML=HTML;
     
-  }
-  function edit(a){
-     let arre=JSON.parse(localStorage.getItem("naxme"))||[];
-    document.getElementById("name").value;(arre[a]).name
-    document.getElementById("age").value;(arre[a]).age
-    document.getElementById("course").value;(arre[a]).course
-     document.getElementById("mark").value;(arre[a]).mark
+  // }
+  // function edit(a){
+  //    let arre=JSON.parse(localStorage.getItem("naxme"))||[];
+  //   document.getElementById("name").value;(arre[a]).name
+  //   document.getElementById("age").value;(arre[a]).age
+  //   document.getElementById("course").value;(arre[a]).course
+  //    document.getElementById("mark").value;(arre[a]).mark
     
-    document.getElementById("addstudent").style=("display: none");
-    document.getElementById("save").style=("display: block");
-    Showdata();
+  //   document.getElementById("addstudent").style=("display: none");
+  //   document.getElementById("save").style=("display: block");
+  //   Showdata();
 
   
-  }
-  function savedata(){
-    let arre=JSON.parse(localStorage.getItem("name"))||[];
+  // }
+  // function savedata(){
+  //   let arre=JSON.parse(localStorage.getItem("name"))||[];
     
-    let name =document.getElementById("name").value;
-    let age=document.getElementById("age").value;
-    let course=document.getElementById("course").value;
-    let mark=document.getElementById("mark").value;
+  //   let name =document.getElementById("name").value;
+  //   let age=document.getElementById("age").value;
+  //   let course=document.getElementById("course").value;
+  //   let mark=document.getElementById("mark").value;
 
  
-  }
-  function deletedata(a){
-     let arre=JSON.parse(localStorage.getItem("name"))||[];
-     arre.splice(a,1);
-     localStorage.setItem("name",JSON.stringify(arre));
-    Showdata()
-  }
+  // }
+  // function deletedata(a){
+  //    let arre=JSON.parse(localStorage.getItem("name"))||[];
+  //    arre.splice(a,1);
+  //    localStorage.setItem("name",JSON.stringify(arre));
+  //   Showdata()
+  // }
+   
+  let i=1
+  let asd=  setInterval(()=>{
+    console.log("hi"+i)
+    i++
+  },1000)
+  setInterval(()=>{
+   clearInterval(asd)
+  },5000)
+
+ 
+
+  
 
 
   
