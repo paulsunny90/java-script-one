@@ -1,3 +1,4 @@
+
 let form=document.getElementById("formss")
 form.addEventListener("submit",(event)=>{
     event.preventDefault()
@@ -51,5 +52,4 @@ form.addEventListener("submit",(event)=>{
     arre[b]=value;
     localStorage.setItem("name",JSON.stringify(arre));
     Buttions()
-     
 };

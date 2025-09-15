@@ -129,17 +129,20 @@
 //   console.log("Password not strong");
 // }
 //password
+// console.log(/.{8,} &[A-Z] [a-z]\d[^A-Za-z0-9]/.test("Paul@123"))
+
+// //Replace
+// console.log("2005-03-24".replace(/^(?<year>\d{4})\-(?<month>\d{2})\-(?<day>\d{2})/g,"$<day>/$<month>/$<year>"))//colling name
+// console.log("2005-03-24".replace(/^(\d{4})\-(\d{2})\-(\d{2})/g,"$3/$2/$1"))//colling number
+// console.log("22:12:2026".replace(/:/g,"-"))
+// console.log("22:12:2026".replace(/:/,"-"))
+// //search
+// console.log("hello , world".search(/, /))
+
+
+// console.log(/^(0[1-9]|[12][0-9]|3[01])\-([0-2][1-9])\-(\d{4})$/.test("31-07-2005"));
+
+
+console.log(/.{10,} & [^A-Z] \d \w [A-Z]$/.test("ABCDE1234F"));
+//passwored
 console.log(/.{8,} &[A-Z] [a-z]\d[^A-Za-z0-9]/.test("Paul@123"))
-
-//Replace
-console.log("2005-03-24".replace(/^(?<year>\d{4})\-(?<month>\d{2})\-(?<day>\d{2})/g,"$<day>/$<month>/$<year>"))//colling name
-console.log("2005-03-24".replace(/^(\d{4})\-(\d{2})\-(\d{2})/g,"$3/$2/$1"))//colling number
-console.log("22:12:2026".replace(/:/g,"-"))
-console.log("22:12:2026".replace(/:/,"-"))
-//search
-console.log("hello , world".search(/, /))
-
-
-console.log(/^(0[1-9]|[12][0-9]|3[01])\-([0-2][1-9])\-(\d{4})$/.test("31-07-2005"));
-
-

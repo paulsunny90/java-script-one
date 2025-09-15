@@ -117,19 +117,46 @@
   //   Showdata()
   // }
    
-  let i=1
-  let asd=  setInterval(()=>{
-    console.log("hi"+i)
-    i++
-  },1000)
-  setInterval(()=>{
-   clearInterval(asd)
-  },5000)
+  // let i=1
+  // let asd=  setInterval(()=>{
+  //   console.log("hi"+i)
+  //   i++
+  // },1000)
+  // setInterval(()=>{
+  //  clearInterval(asd)
+  // },5000)
 
  
 
-  
+const qwe= new Promise((resolve,reject)=>{
+  let sucess =true
+  if(sucess){
+  resolve("sucees")
 
+}
+else {
+  reject(failed)
+}
 
-  
+})
+qwe.the((msg)=>{
+  console.log(mas)
+  console.log(step1)
+  return msg
+})
+qwe.the((msg)=>{
+  console.log(mas)
+  console.log(step2)
+  return msg
+})
+qwe.the((msg)=>{
+  console.log(mas)
+  console.log(step3)
+  return msg
+})
+.catch((err)=>{
+  console.log(err)
+})
+ 
+
   
